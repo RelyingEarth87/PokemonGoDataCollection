@@ -8,7 +8,7 @@ TO SUBMIT DATA FOR THIS PROJECT:
 
 If you would like to submit data, you will need to install Python and Selenium. Both are free. Once you install Python, you can just go to your command line and type in "pip install selenium". For me, for some reason, that didn't work. I had to type in "python -m pip -U selenium" you can try any combination with the python, pip, install, selenium and -m or -U until it actually installs. The -m and -U are in the order they need to be, but for some reason my command line did not recognize the command "install". I don't know why I had to try different things to get it to work. 
 
-After, you should be able to download and use the file. 
+After, you should be able to download and use the IV dist.py file. 
 
 You'll need to change the name variable to your trainer name and adjust your level. Then you will need to either download Chromedriver: http://chromedriver.chromium.org/ or look up the proper web driver for whatever browser you would like to use: https://www.seleniumhq.org/about/platforms.jsp#browsers.
 

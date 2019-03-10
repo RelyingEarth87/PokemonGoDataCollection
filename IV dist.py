@@ -7,6 +7,7 @@ def main():
     day = d.day
     is_caught = eval(input("This Pokemon was 1=Wild Caught 2=Traded "))
     sp = input("What is the species? ")
+    sp = sp.title()
     pklvl = input("What level is the {0}? ".format(sp))
 
 

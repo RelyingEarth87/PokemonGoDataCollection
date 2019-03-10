@@ -10,6 +10,6 @@ If you would like to submit data, you will need to install Python and Selenium. 
 
 After, you should be able to download and use the file. 
 
-You'll need to change the name variable to your trainer name and adjust your level. Then you will need to either download Chromedriver or look up the proper web driver for whatever browser you would like to use.
+You'll need to change the name variable to your trainer name and adjust your level. Then you will need to either download Chromedriver: http://chromedriver.chromium.org/ or look up the proper web driver for whatever browser you would like to use: https://www.seleniumhq.org/about/platforms.jsp#browsers.
 
 After you've done all this, you should be good to go! Submit anything you possibly can. You can even bank data and submit later, but try not to do later than the same day if possible. We accept all data on trades and Wild Catch IVs, just make sure you know whether they were weatherboosted if it's wild or what friend you traded with to get the Pokemon and how good of friends you are with that person.

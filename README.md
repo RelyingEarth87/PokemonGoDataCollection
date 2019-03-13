@@ -18,7 +18,7 @@ After you've done all this, you should be good to go! Submit anything and everyt
 
 <ol>
   <li>If the Pokemon is an Alolan form, submit the Species name as "[species]-A", such as "Vulpix-A".</li>
-  <li>Submit the most accurate info you can get on IVs. If you know exact IVs, submit them and strive for exact IVs, enter the appraisals and the CP at next powerup into the IV checker if it will give you more precise data. The order for precise data goes Exact IVs > Exact IV Percentage > Average Range of IV Percentages.</li>
+  <li>Submit the most accurate info you can get on IVs. If you know exact IVs, submit them and strive for exact IVs, enter the appraisals and the CP at next powerup into the IV checker if it will give you more precise data. <strong>The order for precise data goes Exact IVs > Exact IV Percentage > Average Range of IV Percentages.</strong></li>
   <li>You do not need to capitalize the first letter in the species name, since I have that corrected for in the code. Same thing for Alolan forms, the A will be capitalized as well to make submission easier.<li>
   <li>Sometimes, if your internet is slow or something, the program might miss clicking one of the multiple choice responses, which will make the web page not advance to the second page of questions. If this happens, quit the running program, do not try to fix it or else you might accidentally send bad data because the IV numbers and percentages are set to relative paths, and they might get entered on the first page of data next to your name or the date if the program doesn't work right. Quit out and restart that submission and it should work.</li>
 </ol>

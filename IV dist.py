@@ -8,11 +8,15 @@ def main():
     is_caught = eval(input("This Pokemon was 1=Wild Caught 2=Traded "))
     sp = input("What is the species? ")
     sp = sp.title()
-    pklvl = input("What level is the {0}? ".format(sp))
+    pklvl = eval(input("What level is the {0}? ".format(sp)))
 
 
     if is_caught == 1:
-        wb, iv_fill, iv = catch()
+        while pklvl > 35:
+            print("Not a valid wild Pokemon level.")
+            pklvl = eval(input("What is the level of the Pokemon? "))
+        
+        wb, iv_fill, iv = catch(pklvl)
         
         from selenium import webdriver
         driver = webdriver.Chrome()
@@ -76,8 +80,14 @@ def main():
 
         
     else:
+
+        while pklvl > 40:
+            print("Not a valid Pokemon level.")
+            pklvl = eval(input("What is the level of the Pokemon? "))
+        
         st = eval(input("This was a special trade. (0=No, 1=Yes) "))
         luck = eval(input("Were the Pokemon lucky? (0=No, 1=Yes) "))
+
         friend, iv_fill, iv = trade()
         
         from selenium import webdriver
@@ -147,15 +157,34 @@ def main():
 
         driver.quit()
 
-def catch():
-    wb = eval(input("This Pokemon was weatherboosted. (0=No, 1=Yes) "))
+def catch(pklvl):
+    if pklvl > 30:
+        wb = 1
+    elif pklvl < 6:
+        wb = 0
+    else:
+        wb = eval(input("This Pokemon was weatherboosted. (0=No, 1=Yes) "))
+    
     iv = eval(input("I know 1=exact IVs, 2=exact percentage, 3=range only. "))
 
     if iv is 1:
         iv_fill = 1
-        a = input("Attack")
-        d = input("Defense")
-        h = input("HP")
+        a = eval(input("Attack "))
+        d = eval(input("Defense "))
+        h = eval(input("HP "))
+
+        while a > 15 or a < 0:
+            print("Not a valid attack IV.")
+            a = eval(input("Attack IV: "))
+
+        while d > 15 or d < 0:
+            print("Not a valid defense IV.")
+            d = eval(input("Defense IV: "))
+
+        while h > 15 or h < 0:
+            print("Not a valid stamina IV.")
+            h = eval(input("HP/Stamina IV: "))
+
         iv = [a, d, h]
 
         return wb, iv_fill, iv
@@ -179,9 +208,22 @@ def trade():
 
     if iv is 1:
         iv_fill = 1
-        a = input("Attack ")
-        d = input("Defense ")
-        h = input("HP ")
+        a = eval(input("Attack "))
+        d = eval(input("Defense "))
+        h = eval(input("HP "))
+
+        while a > 15 or a < 0:
+            print("Not a valid attack IV.")
+            a = eval(input("Attack IV: "))
+
+        while d > 15 or d < 0:
+            print("Not a valid defense IV.")
+            d = eval(input("Defense IV: "))
+
+        while h > 15 or h < 0:
+            print("Not a valid stamina IV.")
+            h = eval(input("HP/Stamina IV: "))
+
         iv = [a, d, h]
 
         return friend, iv_fill, iv

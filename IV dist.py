@@ -8,6 +8,8 @@ def main():
     is_caught = eval(input("This Pokemon was 1=Wild Caught 2=Traded "))
     sp = input("What is the species? ")
     sp = sp.title()
+    if sp[-2] == "-":
+        sp = sp[0:len(sp)-1] + "A"
     pklvl = eval(input("What level is the {0}? ".format(sp)))
 
 

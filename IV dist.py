@@ -9,7 +9,7 @@ def main():
     sp = input("What is the species? ")
     sp = sp.title()
     if sp[-2] == "-":
-        sp = sp[0:len(sp)-1] + "A"
+        sp = sp[0:len(sp)-1] + sp[-1].capitalize()
     pklvl = eval(input("What level is the {0}? ".format(sp)))
 
 

@@ -33,7 +33,7 @@ def main():
         level.send_keys(lvl)
 
         if wb == 1:
-            boost = driver.find_elements_by_xpath("//label/div/div/div[3]/div")[1]
+            boost = driver.find_elements_by_xpath("//form[@id='mG61Hd']/div/div[2]/div[2]/div[4]/div/div[2]/div/content/div/div/label/div/div/div[3]/div")[1]
             boost.click()
 
         else:

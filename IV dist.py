@@ -72,7 +72,7 @@ def main():
             submit.click()
 
         elif iv_fill == 3:
-            per = driver.find_elements_by_xpath("//input[@name='entry.598602518']")[0]
+            per = driver.find_elements_by_xpath("//input[@type='text']")[0]
             per.send_keys(iv)
             submit = driver.find_element_by_xpath("//form[@id='mG61Hd']/div/div[2]/div[3]/div/div/div[2]/content/span")
             submit.click()

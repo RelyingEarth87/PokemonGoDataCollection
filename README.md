@@ -3,6 +3,7 @@ A friend and I are creating a data submission project for Pokemon Go and I decid
 
 It stores my Trainer Name and Level, and asks only a few questions about the Pokemon to then submit IV data to either a Trade IV distribution Google Form or a Wild Catch IV Data ditribution Google Form. Selenium then fills in the data to the form and submits it online.
 
+<h1>The Master Branch is the only completed branch. The other branches are a work in progress to more fully automate the process and will grow as I can push them through and perfect them.<h1>
 
 <h1>To Submit Data for this Project:</h1>
 
